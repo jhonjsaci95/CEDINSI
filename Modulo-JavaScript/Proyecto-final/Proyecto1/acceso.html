@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brinka_Brinka</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="./js/app.js" async></script>
+  <link rel="stylesheet" type="text/css" href="./Login/login.css">
+  <meta name="theme-color" content="#2091F9" />
+
+  <meta name="title" content="Aprende CSS desde cero" />
+  <meta name="description"
+    content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexcgdesign.github.io" />
+  <meta property="og:title" content="Aprende CSS desde cero" />
+  <meta property="og:description"
+    content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google." />
+  <meta property="og:image" content="https://alexcgdesign.github.io/images/css.jpg" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.jordanalex.com/" />
+  <meta property="twitter:title" content="Aprende CSS desde cero" />
+  <meta property="twitter:description"
+    content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google." />
+  <meta property="twitter:image" content="https://alexcgdesign.github.io/images/css.jpg" />
+
+
+</head>
+
+<section style="display: none;">
+    <link rel="stylesheet" type="text/css" href=".\ventana_sabores\styles.css" />
+  <div class="containerm" >
+      <!-- <h2>Lista de Elementos</h2> -->
+      <button class="buttonm" id="open-modal-button">Seleciona el Sabor</button>
+      <ul id="item-list">
+        <!-- La lista de elementos se llenará aquí -->
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="item-modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modal-button">*;</span>
+        <h2>Sabor</h2>
+        <select id="item-select">
+          <option value="fresa">fresa</option>
+          <option value="Lulo">Lulo</option>
+          <option value="Chocolate">Chocolate</option>
+          <!-- Puedes agregar más opciones aquí -->
+        </select>
+        <button class="buttonm" id="add-item-button">Selecionar</button>
+      </div>
+    </div>
+
+    <script src=".\ventana_sabores\script.js"></script>
+  </section>
+
+
+<body>
+
+  </header>
+
+  <header class="hero">
+    <nav class="nav container">
+      <div class="nav__logo">
+        <h2 class="nav__title" style="color:white"> <a href="#"></a>Brinka Brinka.</h2>
+      </div>
+
+      <ul class="nav__link nav__link--menu">
+        <li class="nav__items">
+          <a href="index.html" class="nav__links">Inicio</a>
+        </li>
+        <li class="nav__items">
+          <a href="acercade.html" class="nav__links">Acerca de</a>
+        </li>
+        <li class="nav__items">
+          <a href="contacto.html" class="nav__links">Contacto</a>
+        </li>
+        <li class="nav__items">
+          <a href="acceso.html" class="nav__links">Acceso</a>
+        </li>
+
+        <img src="./images/close.svg" class="nav__close" />
+      </ul>
+
+      <div class="nav__menu">
+        <img src="./images/menu.svg" class="nav__img" />
+      </div>
+    </nav>
+
+
+
+    <section class="hero__container container">
+      <h1 class="hero__title">Heladeria y Pizzeria <br>Brinka Brinka.</br></h1>
+      <p class="hero__paragraph">
+        <h1><a href="#contenedor" class="cta">ICE Scream Control</a></h1>
+      </p>
+      <!-- <a syles="backgroundcolor: blue" href="#" class="cta">Ingreso al Sistema</a> -->
+
+
+    </section>
+
+    <!-- login -->
+    <section class="bodys">
+      <div class="overlay" id="overlay">
+        <div class="login-container">
+          <form class="login-form" id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <br>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required /><br /><br />
+
+            <label for="password">Clave:</label>
+            <input type="password" id="password" name="password" required /><br /><br />
+
+            <button type="button" id="login-button" class="buttonlog">Ingresar</button>
+          </form>
+
+          <div class="content-container" id="content">
+
+            <p>
+
+            <h5 class="footer__copyright">
+              Bienvenido Ice Scream Control <br>
+              Derechos reservados &copy; www.superpoder.com.co
+            </h5>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <script src="./login/login.js"></script>
+
+    <!-- login -->
+
+
+  </header>
+
+
+
+  <!-- <div class="content">
+    <h1>Registro de Usuarios</h1>
+
+    <form action="index.php" method="post">
+      <div id="registro">
+        <table border="1">
+          <tr>
+            <td><label>Nombres</label></td>
+            <td><input type="text" name="nombreuser" placeholder="Nombres" required /></td>
+          </tr>
+          <tr>
+            <td><label>Apellidos</label></td>
+            <td><input type="text" name="apellidosuser" placeholder="Apellidos" required /></td>
+          </tr>
+          <tr>
+            <td><label>Correo electronico</label></td>
+            <td><input type="text" name="emailuser" placeholder="example@mail.com" required /></td>
+          </tr>
+          <tr>
+            <td><label>Contrase&ntilde;a</label></td>
+            <td><input type="password" name="pass" placeholder="**********************" required /></td>
+          </tr>
+          <tr>
+            <td><label>Repetir Contrase&ntilde;a</label></td>
+            <td><input type="password" name="rpass" placeholder="**********************" required /></td>
+          </tr>
+          <tr>
+            <td><label><input type="submit" value="Registrarme"></input></label></td>
+            <td><label><input type="reset" value="Reestablecer"></input></label></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </div> -->
+
+
+
+
+
+
+  <section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+
+      <div class="item">
+        <span class="titulo-item">Pizza Extra Grande</span>
+        <img src="images/pizzag.jpg" alt="" class="img-item">
+        <span class="precio-item">$30.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Pizza Familiar</span>
+        <img src="images/pizza.png" alt="" class="img-item">
+        <span class="precio-item">$23.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Pizza mediana</span>
+        <img src="images/pizza.png" alt="" class="img-item">
+        <span class="precio-item">$12.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Pizza personal</span>
+        <img src="images/pizza.png" alt="" class="img-item">
+        <span class="precio-item">$10.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+
+      <div class="item">
+        <span class="titulo-item">Ensalada Grande</span>
+        <img src="images/ensaldas.jpg" alt="" class="img-item">
+        <span class="precio-item">$10.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Ensalada Mediana</span>
+        <img src="images/ensaldas.jpg"  alt="" class="img-item">
+        <span class="precio-item">$8.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Ensalada pequeña</span>
+        <img src="images/ensaldas.jpg"  alt="" class="img-item">
+        <span class="precio-item">$6.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cono 1 bola</span>
+        <img src="images/cono1.jpg" alt="" class="img-item">
+        <span class="precio-item">$2.500</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cono 2 bola</span>
+        <img src="images/cono2.png" alt="" class="img-item">
+        <span class="precio-item">$4.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cono 3 bola</span>
+        <img src="images/cono3.jpeg" alt="" class="img-item">
+        <span class="precio-item">$6.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cono Farfit</span>
+        <img src="images/farfait.jpg" alt="" class="img-item">
+        <span class="precio-item">$7.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Copa Hawaiana</span>
+        <img src="images/haw.jpg" alt="" class="img-item">
+        <span class="precio-item">$42.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Copa Cerezas</span>
+        <img src="images/cerezas.jpg" alt="" class="img-item">
+        <span class="precio-item">$12.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Browny con Helado</span>
+        <img src="images/browny.jpg" alt="" class="img-item">
+        <span class="precio-item">$12.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cono Cereal </span>
+        <img src="images/cereal.jpg" alt="" class="img-item">
+        <span class="precio-item">$12.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Malteadas</span>
+        <img src="images/malteada.jpg" alt="" class="img-item">
+        <span class="precio-item">$8.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Malteadas</span>
+        <img src="images/malteada.png.jpg" alt="" class="img-item">
+        <span class="precio-item">$10.500</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cono Strella</span>
+        <img src="images/estrella.jpeg" alt="" class="img-item">
+        <span class="precio-item">$6.200</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Vaso Queso</span>
+        <img src="images/vasoqueso.jpg" alt="" class="img-item">
+        <span class="precio-item">$8.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Vaso Tropical</span>
+        <img src="images/tropical.jpg" alt="" class="img-item">
+        <span class="precio-item">$12.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Waffless</span>
+        <img src="images/wflee.jpg" alt="" class="img-item">
+        <span class="precio-item">$10.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Desgranado</span>
+        <img src="images/desgranado1.jpg" alt="" class="img-item">
+        <span class="precio-item">$13.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Lasagña</span>
+        <img src="images/lasagña.jpg" alt="" class="img-item">
+        <span class="precio-item">$14.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Hamburgesa</span>
+        <img src="images/hamburg.jpg" alt="" class="img-item">
+        <span class="precio-item">$20.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">HotDogs</span>
+        <img src="images/perro.jpg" alt="" class="img-item">
+        <span class="precio-item">$12.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Jugos Naturales</span>
+        <img src="images/jugos.jpg" alt="" class="img-item">
+        <span class="precio-item">$10.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Gseosa Personal</span>
+        <img src="images/gaseper.jpeg" alt="" class="img-item">
+        <span class="precio-item">$3.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Gseosa Personal</span>
+        <img src="images/gaselitro.png" alt="" class="img-item">
+        <span class="precio-item">$3.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!--
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+
+
+  </section>
+
+
+  <footer class="footer">
+    <section class="footer__container container">
+      <nav class="nav nav--footer">
+        <h2 class="footer__title">Heladeria y Pizzeria <br>Brinka Brinka.</h2>
+
+        <ul class="nav__link nav__link--footer">
+          <li class="nav__items">
+            <a href="index.html" class="nav__links">Inicio</a>
+          </li>
+          <li class="nav__items">
+            <a href="acercade.html" class="nav__links">Acerca de</a>
+          </li>
+          <li class="nav__items">
+            <a href="contacto.html" class="nav__links">Contacto</a>
+          </li>
+          <li class="nav__items">
+            <a href="acceso.html" class="nav__links">Acceso</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+        <h3 class="footer__newsletter">Recibe nuestras <br> promociones: </h3>
+        <div class="footer__inputs">
+          <input type="email" placeholder="Email:" class="footer__input" name="_replyto" />
+          <input type="submit" value="Registrate" class="footer__submit" />
+        </div>
+      </form>
+    </section>
+
+    <section class="footer__copy container">
+      <div class="footer__social">
+        <a href="https://web.facebook.com/p/Brinkans-Brinka-100063568674608/?paipv=0&eav=Afad80Z2e7tt__zbj3tVkcrY2yH6HhWPyaBKqdMvlCJ-L73wEOXnJfvCH3IiAmgWLtc&_rdc=1&_rdr"
+          class="footer__icons"><img src="./images/facebook.png" class="footer__img" /></a>
+        <a href="https://www.instagram.com/brinkabrinkans/?hl=es-la" class="footer__icons"><img
+            src="./images/instagram.png" class="footer__img" /></a>
+        <a href="#" class="footer__icons"><img src="./images/youtube.png" class="footer__img" /></a>
+      </div>
+
+      <h4 class="footer__copyright">
+        Derechos reservados &copy; <h3>www.superpoder.com.co</h3>
+      </h4>
+    </section>
+  </footer>
+
+  <script src="./js/slider.js"></script>
+  <script src="./js/questions.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>
