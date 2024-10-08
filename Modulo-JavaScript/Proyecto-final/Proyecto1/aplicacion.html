@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gestión de Elementos</title>
-    <style>
-      /* Estilo CSS para los elementos y la lista */
-      .elemento {
-        margin: 10px;
-        padding: 5px;
-        border: 1px solid #ccc;
+
+<head>
+  <meta charset="utf-8">
+  <title>Gestión de Elementos</title>
+  <style>
+    /* Estilo CSS para los elementos y la lista */
+    .elemento {
+      margin: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* Estilo CSS para los botones */
+    .boton {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Ingresar Elementos</h2>
+
+  <form id="formulario">
+    <input type="text" id="nuevoElemento" placeholder="Nuevo elemento" required />
+    <button class="boton" type="button" onclick="agregarElemento()">
+      Agregar
+    </button>
+    <button class="boton" type="button" onclick="borrarElementos()">
+      Borrar Todos
+    </button>
+  </form>
+
+  <h2>Lista de Elementos</h2>
+
+  <div id="listaElementos">
+    <!-- Aquí se mostrarán los elementos ingresados -->
+  </div>
+
+  <script>
+    // Función para agregar un elemento a la lista
+    function agregarElemento() {
+      var nuevoElemento = document.getElementById("nuevoElemento").value;
+      if (nuevoElemento !== "") {
+        var elementoDiv = document.createElement("div");
+        elementoDiv.className = "elemento";
+        elementoDiv.innerHTML =
+          nuevoElemento +
+          ' <button class="boton" onclick="eliminarElemento(this)">Eliminar</button>';
+        document.getElementById("listaElementos").appendChild(elementoDiv);
+        document.getElementById("nuevoElemento").value = "";
       }
+    }
 
-      /* Estilo CSS para los botones */
-      .boton {
-        margin-right: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Ingresar Elementos</h2>
+    // Función para eliminar un elemento de la lista
+    function eliminarElemento(elemento) {
+      elemento.parentElement.remove();
+    }
 
-    <form id="formulario">
-      <input
-        type="text"
-        id="nuevoElemento"
-        placeholder="Nuevo elemento"
-        required
-      />
-      <button class="boton" type="button" onclick="agregarElemento()">
-        Agregar
-      </button>
-      <button class="boton" type="button" onclick="borrarElementos()">
-        Borrar Todos
-      </button>
-    </form>
+    // Función para borrar todos los elementos de la lista
+    function borrarElementos() {
+      document.getElementById("listaElementos").innerHTML = "";
+    }
+  </script>
+</body>
 
-    <h2>Lista de Elementos</h2>
-
-    <div id="listaElementos">
-      <!-- Aquí se mostrarán los elementos ingresados -->
-    </div>
-
-    <script>
-      // Función para agregar un elemento a la lista
-      function agregarElemento() {
-        var nuevoElemento = document.getElementById("nuevoElemento").value;
-        if (nuevoElemento !== "") {
-          var elementoDiv = document.createElement("div");
-          elementoDiv.className = "elemento";
-          elementoDiv.innerHTML =
-            nuevoElemento +
-            ' <button class="boton" onclick="eliminarElemento(this)">Eliminar</button>';
-          document.getElementById("listaElementos").appendChild(elementoDiv);
-          document.getElementById("nuevoElemento").value = "";
-        }
-      }
-
-      // Función para eliminar un elemento de la lista
-      function eliminarElemento(elemento) {
-        elemento.parentElement.remove();
-      }
-
-      // Función para borrar todos los elementos de la lista
-      function borrarElementos() {
-        document.getElementById("listaElementos").innerHTML = "";
-      }
-    </script>
-  </body>
 </html>

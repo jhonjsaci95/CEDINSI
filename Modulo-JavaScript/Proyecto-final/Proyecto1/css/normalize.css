@@ -218,7 +218,7 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
+[type="submit"] ::-webkit-search-decoration {
     -webkit-appearance: button;
 }
 
@@ -318,7 +318,7 @@ textarea {
    * 2. Correct the outline style in Safari.
    */
 
-[type="search"] {
+[type="search"] ::-webkit-search-decoration {
     -webkit-appearance: textfield;
     /* 1 */
     outline-offset: -2px;
