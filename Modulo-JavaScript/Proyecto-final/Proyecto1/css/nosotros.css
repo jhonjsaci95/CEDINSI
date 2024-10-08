@@ -1,0 +1,8 @@
+ .about__paragraphs {
+     text-align: justify;
+ }
+
+ /* Estilo para hacer que el nombre de la heladería esté en negrita */
+ .nombre-heladeria {
+     font-weight: bold;
+ }
