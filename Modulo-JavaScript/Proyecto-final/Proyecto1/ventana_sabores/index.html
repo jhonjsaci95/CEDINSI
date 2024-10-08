@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ventana Emergente</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Lista de Elementos</h2>
+      <button id="open-modal-button">Abrir Ventana Emergente</button>
+      <ul id="item-list">
+        <!-- La lista de elementos se llenará aquí -->
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="item-modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modal-button">&times;</span>
+        <h2>Selecciona un Elemento</h2>
+        <select id="item-select">
+          <option value="Item 1">Item 1</option>
+          <option value="Item 2">Item 2</option>
+          <option value="Item 3">Item 3</option>
+          <!-- Puedes agregar más opciones aquí -->
+        </select>
+        <button id="add-item-button">Agregar Elemento</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
