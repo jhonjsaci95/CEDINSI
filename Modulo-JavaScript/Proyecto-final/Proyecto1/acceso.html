@@ -17,54 +17,35 @@
   <link rel="stylesheet" type="text/css" href="./Login/login.css">
   <meta name="theme-color" content="#2091F9" />
 
-  <meta name="title" content="Aprende CSS desde cero" />
-  <meta name="description"
-    content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google." />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alexcgdesign.github.io" />
-  <meta property="og:title" content="Aprende CSS desde cero" />
-  <meta property="og:description"
-    content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google." />
-  <meta property="og:image" content="https://alexcgdesign.github.io/images/css.jpg" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://www.jordanalex.com/" />
-  <meta property="twitter:title" content="Aprende CSS desde cero" />
-  <meta property="twitter:description"
-    content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google." />
-  <meta property="twitter:image" content="https://alexcgdesign.github.io/images/css.jpg" />
-
-
 </head>
 
 <section style="display: none;">
-    <link rel="stylesheet" type="text/css" href=".\ventana_sabores\styles.css" />
-  <div class="containerm" >
-      <!-- <h2>Lista de Elementos</h2> -->
-      <button class="buttonm" id="open-modal-button">Seleciona el Sabor</button>
-      <ul id="item-list">
-        <!-- La lista de elementos se llenará aquí -->
-      </ul>
-    </div>
+  <link rel="stylesheet" type="text/css" href=".\ventana_sabores\styles.css" />
+  <div class="containerm">
+    <!-- <h2>Lista de Elementos</h2> -->
+    <button class="buttonm" id="open-modal-button">Seleciona el Sabor</button>
+    <ul id="item-list">
+      <!-- La lista de elementos se llenará aquí -->
+    </ul>
+  </div>
 
-    <!-- Modal -->
-    <div class="modal" id="item-modal">
-      <div class="modal-content">
-        <span class="close-button" id="close-modal-button">*;</span>
-        <h2>Sabor</h2>
-        <select id="item-select">
-          <option value="fresa">fresa</option>
-          <option value="Lulo">Lulo</option>
-          <option value="Chocolate">Chocolate</option>
-          <!-- Puedes agregar más opciones aquí -->
-        </select>
-        <button class="buttonm" id="add-item-button">Selecionar</button>
-      </div>
+  <!-- Modal -->
+  <div class="modal" id="item-modal">
+    <div class="modal-content">
+      <span class="close-button" id="close-modal-button">*;</span>
+      <h2>Sabor</h2>
+      <select id="item-select">
+        <option value="fresa">fresa</option>
+        <option value="Lulo">Lulo</option>
+        <option value="Chocolate">Chocolate</option>
+        <!-- Puedes agregar más opciones aquí -->
+      </select>
+      <button class="buttonm" id="add-item-button">Selecionar</button>
     </div>
+  </div>
 
-    <script src=".\ventana_sabores\script.js"></script>
-  </section>
+  <script src=".\ventana_sabores\script.js"></script>
+</section>
 
 
 <body>
@@ -104,7 +85,7 @@
     <section class="hero__container container">
       <h1 class="hero__title">Heladeria y Pizzeria <br>Brinka Brinka.</br></h1>
       <p class="hero__paragraph">
-        <h1><a href="#contenedor" class="cta">ICE Scream Control</a></h1>
+      <h1><a href="#contenedor" class="cta">ICE Scream Control</a></h1>
       </p>
       <!-- <a syles="backgroundcolor: blue" href="#" class="cta">Ingreso al Sistema</a> -->
 
@@ -228,13 +209,13 @@
       </div>
       <div class="item">
         <span class="titulo-item">Ensalada Mediana</span>
-        <img src="images/ensaldas.jpg"  alt="" class="img-item">
+        <img src="images/ensaldas.jpg" alt="" class="img-item">
         <span class="precio-item">$8.000</span>
         <button class="boton-item">Agregar al Carrito</button>
       </div>
       <div class="item">
         <span class="titulo-item">Ensalada pequeña</span>
-        <img src="images/ensaldas.jpg"  alt="" class="img-item">
+        <img src="images/ensaldas.jpg" alt="" class="img-item">
         <span class="precio-item">$6.000</span>
         <button class="boton-item">Agregar al Carrito</button>
       </div>
@@ -368,12 +349,12 @@
     </div>
     <!-- Carrito de Compras -->
     <div class="carrito" id="carrito">
-            <div class="header-carrito">
-                <h2>Tu Carrito</h2>
-            </div>
+      <div class="header-carrito">
+        <h2>Tu Carrito</h2>
+      </div>
 
-            <div class="carrito-items">
-                <!--
+      <div class="carrito-items">
+        <!--
                 <div class="carrito-item">
                     <img src="img/boxengasse.png" width="80px" alt="">
                     <div class="carrito-item-detalles">
@@ -405,17 +386,17 @@
                    </button>
                 </div>
                  -->
-            </div>
-            <div class="carrito-total">
-                <div class="fila">
-                    <strong>Tu Total</strong>
-                    <span class="carrito-precio-total">
-                        $120.000,00
-                    </span>
-                </div>
-                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
-            </div>
+      </div>
+      <div class="carrito-total">
+        <div class="fila">
+          <strong>Tu Total</strong>
+          <span class="carrito-precio-total">
+            $120.000,00
+          </span>
         </div>
+        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+      </div>
+    </div>
 
 
   </section>

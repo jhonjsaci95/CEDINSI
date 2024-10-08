@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById("password").value;
 
         // Realizar verificación de credenciales aquí (simulado en este ejemplo).
-        if (username === "manager" && password === "1234567") {
+        if (username === "manager" && password === "123") {
             overlay.style.display = "none"; // Ocultar la superposición modal
             content.style.display = "block"; // Mostrar el contenido protegido
         } else {
