@@ -1,0 +1,123 @@
+<h2>Validaciones Reactivas</h2>
+
+<hr />
+
+<div class="row">
+  <div class="col">
+    <form autocomplete="off" [formGroup]="registerForm" (ngSubmit)="save()">
+      <!-- nombre -->
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Nombre</label>
+        <div class="col-sm-9">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre del usuario"
+            formControlName="name"
+          />
+
+          <span class="form-text text-danger" *ngIf="validField('name')">
+            Debe de ser en formato de nombre y apellido
+          </span>
+        </div>
+      </div>
+
+      <!-- email -->
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Correo</label>
+        <div class="col-sm-9">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Correo del usuario"
+            formControlName="email"
+          />
+          <span class="form-text text-danger" *ngIf="validField('email')">
+            {{ emailErrorMsg }}
+          </span>
+        </div>
+      </div>
+
+      <!-- username -->
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Username</label>
+        <div class="col-sm-9">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre código del usuario"
+            formControlName="username"
+          />
+          <span class="form-text text-danger" *ngIf="validField('username')">
+            El username no puede ser Strider
+          </span>
+        </div>
+      </div>
+
+      <!-- password -->
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Contraseña</label>
+        <div class="col-sm-9">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Contraseña de la cuenta"
+            formControlName="password"
+          />
+          <span class="form-text text-danger" *ngIf="validField('password')">
+            La contraseña debe contener al menos 8 letras
+          </span>
+        </div>
+      </div>
+
+      <!-- password -->
+      <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Confirmar</label>
+        <div class="col-sm-9">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirmar la contraseña"
+            formControlName="confirmPassword"
+          />
+          <span
+            class="form-text text-danger"
+            *ngIf="validField('confirmPassword')"
+          >
+            <!-- registerForm.hasError('match_password') &&
+          registerForm.get('confirmPassword')?.touched -->
+            Las contraseñas deben de ser iguales
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-primary float-end">Crear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<h2>Form valid: {{ registerForm.valid }}</h2>
+
+<h2>Nombre</h2>
+<pre>
+  {{ registerForm.controls["name"].errors | json }}
+</pre>
+
+<h2>Username</h2>
+<pre>
+  {{ registerForm.controls["username"].errors | json }}
+</pre>
+
+<h2>password</h2>
+<pre>
+  {{ registerForm.controls["password"].errors | json }}
+</pre>
+
+<h2>Confirm password</h2>
+<pre>
+  {{ registerForm.controls["confirmPassword"].errors | json }}
+</pre>
